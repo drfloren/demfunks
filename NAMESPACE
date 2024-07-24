@@ -3,3 +3,4 @@
 export(catf)
 export(contf)
 export(ind_catf)
+export(sub_contf)
