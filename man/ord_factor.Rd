@@ -18,7 +18,7 @@ ord_factor(x, by = "count", decreasing = NULL, na.rm = TRUE, ...)
 \item{...}{Additional arguments passed to factor.}
 }
 \description{
-Orders factor levels based on count or alphabetical order
+Somewhat depreciated in place of alternate function options from the \code{forcats} package. Orders factor levels based on count or alphabetical order
 }
 \details{
 Orders factor levels based on count or alphabetical order
@@ -34,7 +34,7 @@ table(ord_factor(ToothGrowth$supp, decreasing = TRUE, by="alphabetical"))
 
 }
 \seealso{
-\code{\link[=factor]{factor()}}
+\code{\link[=factor]{factor()}}, and for other packages consider \code{\link[forcats:fct_inorder]{forcats::fct_infreq()}} from \code{forcats} (a good additional function to have when working with these).
 }
 \author{
 Michael Floren

@@ -1,6 +1,6 @@
 #' @title Order Factor
 #' 
-#' @description Orders factor levels based on count or alphabetical order
+#' @description Somewhat depreciated in place of alternate function options from the `forcats` package. Orders factor levels based on count or alphabetical order
 #' 
 #' @param x The factor vector to be reordered
 #' @param by The method by which to reorder. Currently "count" and "alphabetical" are supported
@@ -21,7 +21,7 @@
 #' 
 #' @author Michael Floren
 #' 
-#' @seealso [factor()]
+#' @seealso [factor()], and for other packages consider [forcats::fct_infreq()] from `forcats` (a good additional function to have when working with these). 
 #' 
 #' @export
 
