@@ -29,8 +29,14 @@ catf(ChickWeight$Diet, which_in_paren = "n")
 
 }
 \seealso{
-\code{\link[=table]{table()}}, \code{\link[=ind_catf]{ind_catf()}}
+\code{\link[=table]{table()}}
+
+Other categorical data functions: 
+\code{\link{cat_row}()},
+\code{\link{ind_catf}()},
+\code{\link{sub_catf}()}
 }
 \author{
 Michael Floren
 }
+\concept{categorical data functions}

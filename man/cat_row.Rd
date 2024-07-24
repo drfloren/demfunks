@@ -42,8 +42,12 @@ flextable(cat_tab) \%>\%
 
 }
 \seealso{
-\code{\link[=catf]{catf()}}
+Other categorical data functions: 
+\code{\link{catf}()},
+\code{\link{ind_catf}()},
+\code{\link{sub_catf}()}
 }
 \author{
 Michael Floren
 }
+\concept{categorical data functions}

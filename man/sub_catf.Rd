@@ -41,8 +41,14 @@ sub_catf(ChickWeight$Time, ChickWeight$Diet, margin=2)
 
 }
 \seealso{
-\code{\link[=aggregate]{aggregate()}}, \code{\link[=catf]{catf()}}
+\code{\link[=aggregate]{aggregate()}}
+
+Other categorical data functions: 
+\code{\link{cat_row}()},
+\code{\link{catf}()},
+\code{\link{ind_catf}()}
 }
 \author{
 Michael Floren
 }
+\concept{categorical data functions}

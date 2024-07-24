@@ -20,7 +20,8 @@
 #' 
 #' @author Michael Floren
 #' 
-#' @seealso [aggregate()], [catf()]
+#' @seealso [aggregate()]
+#' @family categorical data functions
 #' 
 #' @export
 #' 

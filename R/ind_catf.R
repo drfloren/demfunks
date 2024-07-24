@@ -21,7 +21,8 @@
 #' 
 #' @author Michael Floren
 #' 
-#' @seealso [table()], [catf()]
+#' @seealso [table()]
+#' @family categorical data functions
 #' 
 #' @export 
 

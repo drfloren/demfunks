@@ -33,7 +33,7 @@
 #' 
 #' @author Michael Floren
 #' 
-#' @seealso [catf()]
+#' @family categorical data functions
 #' 
 #' @export
 #' 
