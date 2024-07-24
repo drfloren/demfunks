@@ -6,7 +6,7 @@ Description: Loads as set of useful functions for demographics analysis and repo
 Imports: 
     myStuff
 Remotes: 
-    drmfloren/myStuff
+    drfloren/myStuff
 License: LICENSE
 LazyData: true
 Encoding: UTF-8
