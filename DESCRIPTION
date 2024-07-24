@@ -3,6 +3,10 @@ Title: Demographic Functions
 Version: 0.1
 Authors@R: person("Michael", "Floren", , "drmfloren@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6082-8729 "))
 Description: Loads as set of useful functions for demographics analysis and reporting
+Imports: 
+    myStuff
+Remotes: 
+    drmfloren/myStuff
 License: LICENSE
 LazyData: true
 Encoding: UTF-8
