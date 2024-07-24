@@ -20,9 +20,7 @@
 #' 
 #' @examples
 #' contf(ChickWeight$weight)
-#' 
 #' contf(ChickWeight$weight, dig=3, supp="ci", alpha=0.10)
-#' 
 #' contf(ChickWeight$weight, dig=0, morm="median", quart_vals = c(0.05, 0.95), quart_type=5, n=FALSE)
 #'
 #' @author Michael Floren
