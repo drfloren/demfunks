@@ -27,6 +27,7 @@
 #' 
 #' @seealso Base calculation functions of [mean()], [median()], [sd()], and [quantile()]. Formatting and rounding is done using [fr()].
 #' 
+#' @export
 
 contf <- function(x, na.rm=TRUE, dig=2, morm = "mean", supp="match", alpha=0.05, n=TRUE, quart_vals = c(0.25, 0.75), quart_type=2){
   # Did you do want mean or median?

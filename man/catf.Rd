@@ -29,7 +29,7 @@ catf(ChickWeight$Diet, which_in_paren = "n")
 
 }
 \seealso{
-\code{\link[=table]{table()}}
+\code{\link[=table]{table()}}, \code{\link[=ind_catf]{ind_catf()}}
 }
 \author{
 Michael Floren

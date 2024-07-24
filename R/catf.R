@@ -18,7 +18,9 @@
 #' 
 #' @author Michael Floren
 #' 
-#' @seealso [table()]
+#' @seealso [table()], [ind_catf()]
+#' 
+#' @export
 
 catf <- function(x, dig=1, which_in_paren="p", include_perc_sign=TRUE, ...) {
   out <- table(x, ...)
