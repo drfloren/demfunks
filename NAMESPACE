@@ -2,6 +2,7 @@
 
 export(cat_row)
 export(catf)
+export(clpse_sata)
 export(contf)
 export(ind_catf)
 export(sub_catf)
