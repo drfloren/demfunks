@@ -8,6 +8,13 @@
 #' @details This function is handy for placing information in a matrix. The starting dataset should have 3 columns: a column with the row labels, a column with the column labels, and a column with the entries in each cell of the matrix. For the input dataset, there should be only a single row entry for the combination of column entries that will be row and column (as this is purely for formatting, there will be no row aggregation).
 #' 
 #' @examples
+#' #this works great
+#' xtabs(len~supp+dose, data=aggregate(len~ supp + dose, data=ToothGrowth, mean))
+#' 
+#' #but this does not
+#' xtabs(len~supp+dose, data=aggregate(len~ supp + dose, data=ToothGrowth, contf))
+#' 
+#' #enter this function!
 #' xtabs_cat("len", aggregate(len~ supp + dose, data=ToothGrowth, contf))
 #' 
 #' @author Michael Floren
