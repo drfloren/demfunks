@@ -5,7 +5,7 @@
 #' 
 #' @param x The binary vector (0's and 1's) with data on the categorical variable to be used in calculating the descriptives.
 #' @param dig How many digits should values round to? Defaults to 1 (e.g., 99.1%).
-#' @param na_in_denom Should NA's be included in the denominator when calculating the percentage? Note that NA's will not be included in the sum. Default is FALSE.
+#' @param na_in_denom Should NA's be included in the denominator when calculating the percentage? Note that NA's will not be included in the num. Default is FALSE.
 #' @param which_in_paren Which should be in parentheses? Arguments are "n" and "p". Defaults to "p"
 #' @param include_perc_sign Should the percent sign be included? Defaults to FALSE.
 #' @param ... Additional arguments for `table` (e.g., `exclude=NULL` to include NA's)
@@ -27,7 +27,7 @@
 #' @export 
 
 ind_catf <- function(x, dig=1, na_in_denom=FALSE, which_in_paren="p", include_perc_sign=TRUE, ...) {
-  num = sum(x, na.rm=na.rm)
+  num = sum(x, na.rm=TRUE)
   
   if(!na_in_denom){
     den =length(x[!is.na(x)])
