@@ -27,7 +27,7 @@
 #' 
 
 
-sub_catf <- function (x, subgroup=NULL, dig=1, names=TRUE, out_df=TRUE, margin=2, ...){
+sub_catf <- function (x, subgroup=NULL, dig=1, names=TRUE, out_df=TRUE, margin=2, header_name=NA, ...){
   if(length(subgroup)==1 | is.null(subgroup)){
     warning("Subgroups should be the same length as x. Moving forward with no subgroups.")
     subgroup <- rep(1, length(x))
@@ -42,6 +42,11 @@ sub_catf <- function (x, subgroup=NULL, dig=1, names=TRUE, out_df=TRUE, margin=2
   if(names){
     colnames(out) <- col_table_names
     rownames(out) <- row_table_names
+  }
+  if(!is.na(header_name)){
+    out <- rbind(c(NA),
+                 out)
+    rownames(out)[1] <- header_name
   }
   if(out_df)
     out <- data.frame(out)
