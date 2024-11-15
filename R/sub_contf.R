@@ -7,6 +7,7 @@
 #' @param subgroup The vector listing out the categorical variable to use in making subgroups
 #' @param names Would you like the results to be named?
 #' @param n An argument to pass to `contf`: would you like the sample size to be included? Included as an argument so that there isn't confusion with the names argument (no doubt due to my sloppy programming)
+#' @param header_name A header name to be included (for inclusion in certain strutures of demographic tables).
 #' @param ... Additional arguments to pass to `contf`
 #' 
 #' @details

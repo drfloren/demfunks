@@ -28,6 +28,8 @@ sub_catf(
 
 \item{margin}{Passed to \code{prop.table}: which margin should the percentages be calculated for?}
 
+\item{header_name}{A header name to be included (for inclusion in certain strutures of demographic tables)}
+
 \item{...}{Additional arguments to pass to \code{catf}}
 }
 \description{

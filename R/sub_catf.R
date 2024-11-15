@@ -9,6 +9,7 @@
 #' @param names Would you like the results to be named?
 #' @param out_df Should the output be formatted as a data.frame? Default is TRUE.
 #' @param margin Passed to `prop.table`: which margin should the percentages be calculated for?
+#' @param header_name A header name to be included (for inclusion in certain strutures of demographic tables)
 #' @param ... Additional arguments to pass to `catf`
 #' 
 #' @details

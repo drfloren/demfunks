@@ -15,6 +15,8 @@ sub_contf(x, subgroup, names = TRUE, n = TRUE, header_name = NA, ...)
 
 \item{n}{An argument to pass to \code{contf}: would you like the sample size to be included? Included as an argument so that there isn't confusion with the names argument (no doubt due to my sloppy programming)}
 
+\item{header_name}{A header name to be included (for inclusion in certain strutures of demographic tables).}
+
 \item{...}{Additional arguments to pass to \code{contf}}
 }
 \description{
