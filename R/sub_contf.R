@@ -24,10 +24,14 @@
 #' 
 
 
-sub_contf <- function (x, subgroup, names=TRUE, n=TRUE, ...){
+sub_contf <- function (x, subgroup, names=TRUE, n=TRUE, header_name=NA, ...){
   raw_ag <- aggregate(x~subgroup, FUN=function(vals) contf(vals, n=n, ...))
   out <- raw_ag[,2]
   if(names)
     names(out) <- raw_ag[,1]
+  if(!is.na(header_name)){
+    out <- rbind(out)
+    rownames(out)[1] <- header_name
+  }
   out
 }
