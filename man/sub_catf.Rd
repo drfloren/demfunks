@@ -11,6 +11,7 @@ sub_catf(
   names = TRUE,
   out_df = TRUE,
   margin = 2,
+  header_name = NA,
   ...
 )
 }

@@ -4,7 +4,7 @@
 \alias{sub_contf}
 \title{Continuous Descriptives By Subgroup}
 \usage{
-sub_contf(x, subgroup, names = TRUE, n = TRUE, ...)
+sub_contf(x, subgroup, names = TRUE, n = TRUE, header_name = NA, ...)
 }
 \arguments{
 \item{x}{The vector with data on the continuous variable to be used in calculating the descriptives.}

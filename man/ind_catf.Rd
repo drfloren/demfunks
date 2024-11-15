@@ -18,7 +18,7 @@ ind_catf(
 
 \item{dig}{How many digits should values round to? Defaults to 1 (e.g., 99.1\%).}
 
-\item{na_in_denom}{Should NA's be included in the denominator when calculating the percentage? Note that NA's will not be included in the sum. Default is FALSE.}
+\item{na_in_denom}{Should NA's be included in the denominator when calculating the percentage? Note that NA's will not be included in the num. Default is FALSE.}
 
 \item{which_in_paren}{Which should be in parentheses? Arguments are "n" and "p". Defaults to "p"}
 
