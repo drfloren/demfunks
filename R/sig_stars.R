@@ -23,5 +23,18 @@ sig_stars <- function(p, breaks=NULL, labels=NULL, ...) {
   if(is.null(labels))
     labels = c("***","**","*","'", "")
   
-  cut(p, breaks = breaks, labels = labels, ...)
+  out <- cut(p, breaks = breaks, labels = labels, ...)
+  
+  if(any(p==0)){
+    out[which(p==0)] <- labels[1]
+    warning("There is a p-value that is zero. Assuming it was just very small and marking it with the highest significance label.")
+  }
+  
+  if(any(p>=1)){
+    
+    out[which(p>=1)] <- labels[length(labels)]
+    warning("There is a p-value that is 1 or more. Assuming it was just very large and marking it nonsignificant.")
+  }
+  
+  out
 }
