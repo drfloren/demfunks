@@ -4,7 +4,14 @@
 \alias{apa_cor_table}
 \title{APA Correlation Table}
 \usage{
-apa_cor_table(dat, dig = 2, stars = TRUE, msd = TRUE, minmax = FALSE)
+apa_cor_table(
+  dat,
+  dig = 2,
+  stars = TRUE,
+  msd = TRUE,
+  minmax = FALSE,
+  diagsymb = "-"
+)
 }
 \arguments{
 \item{dat}{The data.frame of continuous variables you'd like to make a table for}
@@ -16,6 +23,8 @@ apa_cor_table(dat, dig = 2, stars = TRUE, msd = TRUE, minmax = FALSE)
 \item{msd}{Logical. Should the mean and standard deviation be included? Defaults to TRUE.}
 
 \item{minmax}{Logical. Should the minimum and maximum be included? Defaults to FALSE.}
+
+\item{diagsymb}{What symbol should the diagonal take on? Defaults to "-"}
 }
 \description{
 This is a general function for building typical tables that I see in reports. Similar to \code{apa.cor.table} from the \code{apaTables} package.

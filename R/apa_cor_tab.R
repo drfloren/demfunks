@@ -7,6 +7,7 @@
 #' @param stars Logical. Should significance stars be included? Defaults to TRUE
 #' @param msd Logical. Should the mean and standard deviation be included? Defaults to TRUE.
 #' @param minmax Logical. Should the minimum and maximum be included? Defaults to FALSE.
+#' @param diagsymb What symbol should the diagonal take on? Defaults to "-"
 #' 
 #' @details Calculates a base correlation matrix, then adds leading columns as requested. Rounding is conducted via `myStuff::fr` and stars are calculated via `demfunks::sig_stars`.
 #' 
@@ -19,14 +20,14 @@
 #' 
 #' @export
 
-apa_cor_table <- function(dat, dig=2, stars=TRUE, msd=TRUE, minmax=FALSE){
+apa_cor_table <- function(dat, dig=2, stars=TRUE, msd=TRUE, minmax=FALSE, diagsymb="-"){
   vars <- colnames(dat)
   
   # Making the base correlation table
   base_cor_tab <- cor(dat, use = "complete.obs")
   out_cor_tab <- myStuff::fr(base_cor_tab, dig = dig)
   out_cor_tab[upper.tri(out_cor_tab)] <- NA
-  diag(out_cor_tab) <- "-"
+  diag(out_cor_tab) <- diagsymb
   
   # Adding significance stars, if requested, using the sig_stars function from demfunks
   if(stars){
